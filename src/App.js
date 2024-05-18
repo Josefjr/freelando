@@ -6,6 +6,9 @@ import { Estilos } from "./componentes/EstilosGlobais/Estilos";
 import { ListaSuspensa } from "./componentes/ListaSuspensa/ListaSuspensa";
 import { ProvedorTema } from "./componentes/ProvedorTema/ProvedorTema";
 import { Tipografia } from "./componentes/Tipografia/Tipografia";
+import { Cabecalho } from "./componentes/Cabecalho/Cabecalho";
+import { FreelandoLogo } from "./componentes/Icones/FreelandoLogo";
+import { Link } from "./componentes/Link/Link";
 
 
 const estadosBrasileiros = [
@@ -43,6 +46,20 @@ function App() {
     <ProvedorTema>
 
       <Estilos />
+
+      <Cabecalho>
+        <Container>
+          <Row align="center">
+            <Col>
+              <FreelandoLogo />
+            </Col>
+            <Col style={{ textAlign: 'right' }}>
+              <Link>Login</Link>
+            </Col>
+          </Row>
+        </Container>
+      </Cabecalho>
+
       <Container style={{ margin: '80px' }}>
         <Row justify="center">
           <Col lg={6} md={8} sm={12}>
